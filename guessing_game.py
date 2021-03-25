@@ -29,7 +29,7 @@ def start_game():
         score += attempts
 
     print("Got it!")
-    print("Congratulations {}, you have guessed the correct number! It only took you {} attempts and your score is now {}. Way to go smarty pants! The game is now over.".format(name, attempts, score))        
+    print("Congratulations {}, \U0001F389 you have guessed the correct number! It only took you {} attempts and your score is now {}. Way to go smarty pants! The game is now over.".format(name, attempts, score))        
     play_again = input("Would you like to play again? (Yes/No)")
     if play_again.lower() == "yes":
         start_game()
