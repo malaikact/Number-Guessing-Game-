@@ -13,7 +13,6 @@ def start_game():
     while guess != number:
         if guess > 10 or guess < 0:
             print("Oops! That number is not within the range. Try again")
-            attempts +=1
             guess = guess_again(guess)
         elif guess > number:
             print("It's lower")
@@ -21,6 +20,7 @@ def start_game():
             guess = guess_again(guess)
         else:
             print("It's higher")
+            attempts +=1
             guess = guess_again(guess)
 
     if attempts < score: 
