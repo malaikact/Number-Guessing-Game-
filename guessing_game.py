@@ -1,8 +1,8 @@
 import random          
 def start_game():
-    scores = [] 
+    scores = [100] 
     name = input("Hi there \U0001F44B, welcome to the Number Guessing Game! \U0001F3AE What is your name?  ") 
-    print("The highscore is {}, let's see if you can beat it.".format(scores))
+    print("The highscore is {}, let's see if you can beat it.".format(min(scores)))
     print("Let's get started {}!".format(name))
     
     number = random.randint(1,10)
